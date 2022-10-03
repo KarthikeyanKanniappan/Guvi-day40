@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useFormik } from "formik";
-import {
-  Typography,
-  TextField,
-  Card,
-  CardContent,
-  Grid,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Box,
-  Button,
-} from "@material-ui/core";
+import Typography from "@mui/material/Typography";
+import TextField from "@mui/material/TextField";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Alerter from "../components/Alerter";
 import axios from "axios";
 import { env } from "../config";
@@ -84,6 +82,7 @@ const Student = () => {
                   name="StudentEmail"
                 />
               </Grid>
+              <Box sx={{ height: "100px" }}></Box>
               <Grid container justify="center">
                 <FormControl className="form-control">
                   <InputLabel id="demo-simple-select-label">Course</InputLabel>
@@ -101,6 +100,7 @@ const Student = () => {
                   </Select>
                 </FormControl>
               </Grid>
+
               <Grid className="GridForm" container justify="center">
                 <Button
                   type="submit"

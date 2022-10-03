@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import {
-  Typography,
-  Tab,
-  AppBar,
-  Toolbar,
-  Tabs,
-  Button,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
-
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Tabs from "@mui/material/Tabs";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import useTheme from "@mui/material/styles/useTheme";
 import DrawerComp from "./DrawerComp";
 import SelfImprovementIcon from "@mui/icons-material/SelfImprovement";
 import { Outlet } from "react-router-dom";
